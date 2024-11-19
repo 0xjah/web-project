@@ -140,16 +140,21 @@ p {
     width: 100%; /* Make cards take full width on small screens */
     margin-bottom: 15px;
   }
-
-  .search-input {
-    width: 100%; /* Make search input full-width */
-    padding: 10px;
-  }
-
   .search-button {
-    width: 100%; /* Make search button full-width on mobile */
+    width: 100%;
     padding: 10px;
     margin-top: 10px;
+  }
+
+  .search-input:focus {
+    display: block; /* Show input field when it's focused */
+    width: 100%; /* Make input full width */
+    padding: 10px;
+    margin-top: 10px;
+  }
+
+  .search-button:focus + .search-input {
+    display: block; /* When button is focused, show input */
   }
 
   .container {
@@ -165,13 +170,12 @@ p {
   }
 
   .search-input {
-    padding: 8px;
-    font-size: 14px; /* Adjust font size */
+    display: block;
+    width: 200px;
   }
 
   .search-button {
-    font-size: 16px;
-    padding: 8px;
+    display: none; /* Hide the search button on desktop */
   }
 
   .footer p {

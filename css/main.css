@@ -115,7 +115,6 @@ p {
   }
 
   .navbar a {
-    float: none; /* Stack the links vertically */
     display: block; /* Make each link a block element */
     text-align: left; /* Align text to the left */
     padding: 10px;

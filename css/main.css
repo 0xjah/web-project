@@ -108,3 +108,73 @@ p {
   color: white;
   font-size: 18px;
 }
+/* Mobile Responsiveness */
+@media screen and (max-width: 768px) {
+  .navbar {
+    padding: 5px;
+  }
+
+  .navbar a {
+    float: none; /* Stack the links vertically */
+    display: block; /* Make each link a block element */
+    text-align: left; /* Align text to the left */
+    padding: 10px;
+    font-size: 18px;
+  }
+
+  .navbar a:hover {
+    background-color: rgba(96, 174, 121, 0.802);
+    color: black;
+  }
+
+  .footer {
+    position: relative; /* Change fixed to relative on small screens */
+    padding: 10px;
+  }
+
+  .center {
+    padding: 50px 10px; /* Adjust padding for smaller screens */
+  }
+
+  .card {
+    width: 100%; /* Make cards take full width on small screens */
+    margin-bottom: 15px;
+  }
+
+  .search-input {
+    width: 100%; /* Make search input full-width */
+    padding: 10px;
+  }
+
+  .search-button {
+    width: 100%; /* Make search button full-width on mobile */
+    padding: 10px;
+    margin-top: 10px;
+  }
+
+  .container {
+    padding: 2px 8px; /* Adjust padding for small screens */
+  }
+}
+
+/* Extra small screens (portrait phones) */
+@media screen and (max-width: 480px) {
+  .navbar a {
+    font-size: 16px; /* Reduce font size further */
+    padding: 8px 16px; /* Adjust padding */
+  }
+
+  .search-input {
+    padding: 8px;
+    font-size: 14px; /* Adjust font size */
+  }
+
+  .search-button {
+    font-size: 16px;
+    padding: 8px;
+  }
+
+  .footer p {
+    font-size: 12px; /* Adjust footer text size */
+  }
+}

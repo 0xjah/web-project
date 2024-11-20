@@ -22,6 +22,10 @@ p {
   color: #2980b9;
   text-align: right;
 }
+.bookviwer{
+  width: 30%;
+  height: 100%;
+}
 
 .center {
   padding: 100px;

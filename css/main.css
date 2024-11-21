@@ -21,10 +21,9 @@ body {
   cursor: pointer;
 }
 
-h2>a {
+.active{
   color: #053B50;
 }
-
 nav ul {
   display: flex;
   justify-content: center;
@@ -66,7 +65,6 @@ button:hover {
   color: #053B50;
 }
 
-
 a {
   color: #1abc9c;
   text-decoration: none;
@@ -77,6 +75,9 @@ a:hover {
   color: #053B50;
 }
 
+.logo a{
+  color: #053B50;
+}
 h1 {
   color: #222831;
 }
@@ -224,78 +225,79 @@ p {
     margin: 10px 0;
     /* Adjust margin */
   }
-}
 
-.navbar {
-  flex-direction: column;
-  /* Stack the navbar links vertically */
-  align-items: center;
-  /* Center align items on mobile */
-  padding: 20px;
-  /* Adjust padding for mobile */
-}
 
-.navbar a {
-  font-size: 16px;
-  /* Adjust font size on mobile */
-  padding: 12px 20px;
-  /* Add more padding for easier tapping */
-  text-align: left;
-  /* Align links to the left */
-  width: 100%;
-  /* Make links take full width on mobile */
-  box-sizing: border-box;
-  /* Prevent overflow */
-}
+  .navbar {
+    flex-direction: column;
+    /* Stack the navbar links vertically */
+    align-items: center;
+    /* Center align items on mobile */
+    padding: 20px;
+    /* Adjust padding for mobile */
+  }
 
-.navbar a:hover {
-  background-color: rgba(96, 174, 121, 0.802);
-  color: black;
-}
+  .navbar a {
+    font-size: 16px;
+    /* Adjust font size on mobile */
+    padding: 12px 20px;
+    /* Add more padding for easier tapping */
+    text-align: left;
+    /* Align links to the left */
+    width: 100%;
+    /* Make links take full width on mobile */
+    box-sizing: border-box;
+    /* Prevent overflow */
+  }
 
-.footer {
-  position: relative;
-  /* Change fixed to relative on small screens */
-  padding: 10px;
-}
+  .navbar a:hover {
+    background-color: rgba(96, 174, 121, 0.802);
+    color: black;
+  }
 
-.center {
-  padding: 50px 10px;
-  /* Adjust padding for smaller screens */
-}
+  .footer {
+    position: relative;
+    /* Change fixed to relative on small screens */
+    padding: 10px;
+  }
 
-.card {
-  width: 100%;
-  /* Make cards take full width on small screens */
-  margin-bottom: 15px;
-}
+  .center {
+    padding: 50px 10px;
+    /* Adjust padding for smaller screens */
+  }
 
-.search-button {
-  width: 100%;
-  /* Make the search button take full width on mobile */
-  padding: 12px;
-  /* Add extra padding to make the button easier to tap */
-  margin-top: 10px;
-}
+  .card {
+    width: 100%;
+    /* Make cards take full width on small screens */
+    margin-bottom: 15px;
+  }
 
-/* Show the search input when the button is clicked */
-.search-input:focus {
-  display: block;
-  width: 100%;
-  /* Input takes full width */
-  padding: 12px;
-  /* Add padding to the search input */
-  margin-top: 10px;
-}
+  .search-button {
+    width: 100%;
+    /* Make the search button take full width on mobile */
+    padding: 12px;
+    /* Add extra padding to make the button easier to tap */
+    margin-top: 10px;
+  }
 
-.search-container {
-  width: 100%;
-  /* Make search bar container full width */
-}
+  /* Show the search input when the button is clicked */
+  .search-input:focus {
+    display: block;
+    width: 100%;
+    /* Input takes full width */
+    padding: 12px;
+    /* Add padding to the search input */
+    margin-top: 10px;
+  }
 
-.container {
-  padding: 2px 8px;
-  /* Adjust padding for small screens */
+  .search-container {
+    width: 100%;
+    /* Make search bar container full width */
+  }
+
+  .container {
+    padding: 2px 8px;
+    /* Adjust padding for small screens */
+  }
 }
 
 /* Extra small screens (portrait phones) */
@@ -316,26 +318,27 @@ p {
     font-size: 12px;
     /* Further reduce font size */
   }
-}
 
-.navbar a {
-  font-size: 16px;
-  /* Reduce font size further */
-  padding: 8px 16px;
-  /* Adjust padding */
-}
 
-.search-input {
-  display: block;
-  width: 200px;
-}
+  .navbar a {
+    font-size: 16px;
+    /* Reduce font size further */
+    padding: 8px 16px;
+    /* Adjust padding */
+  }
 
-.search-button {
-  display: none;
-  /* Hide the search button on desktop */
-}
+  .search-input {
+    display: block;
+    width: 200px;
+  }
 
-.footer p {
-  font-size: 12px;
-  /* Adjust footer text size */
+  .search-button {
+    display: none;
+    /* Hide the search button on desktop */
+  }
+
+  .footer p {
+    font-size: 12px;
+    /* Adjust footer text size */
+  }
 }

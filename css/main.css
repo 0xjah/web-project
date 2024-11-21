@@ -181,100 +181,161 @@ p {
 
 /* Mobile Responsiveness */
 @media screen and (max-width: 768px) {
-  .navbar {
+  .home {
     flex-direction: column;
-    /* Stack the navbar links vertically */
-    align-items: center;
-    /* Center align items on mobile */
-    padding: 20px;
-    /* Adjust padding for mobile */
+    /* Stack the content vertically on mobile */
+    margin: 10px;
+    /* Reduce margin */
   }
 
-  .navbar a {
-    font-size: 16px;
-    /* Adjust font size on mobile */
-    padding: 12px 20px;
-    /* Add more padding for easier tapping */
-    text-align: left;
-    /* Align links to the left */
-    width: 100%;
-    /* Make links take full width on mobile */
-    box-sizing: border-box;
-    /* Prevent overflow */
+  .logo {
+    font-size: 30px;
+    /* Reduce font size on mobile */
+    margin: 10px;
   }
 
-  .navbar a:hover {
-    background-color: rgba(96, 174, 121, 0.802);
-    color: black;
+  nav ul {
+    flex-direction: column;
+    /* Stack navigation items vertically */
+    align-items: flex-start;
+    /* Align items to the left */
+    padding: 0;
   }
 
-  .footer {
-    position: relative;
-    /* Change fixed to relative on small screens */
-    padding: 10px;
-  }
-
-  .center {
-    padding: 50px 10px;
-    /* Adjust padding for smaller screens */
-  }
-
-  .card {
-    width: 100%;
-    /* Make cards take full width on small screens */
+  nav>ul>li {
+    margin-left: 0;
+    /* Remove left margin for stacked items */
     margin-bottom: 15px;
+    /* Add spacing between items */
   }
 
-  .search-button {
-    width: 100%;
-    /* Make the search button take full width on mobile */
-    padding: 12px;
-    /* Add extra padding to make the button easier to tap */
-    margin-top: 10px;
+  nav>ul>li>a {
+    font-size: 18px;
+    /* Reduce font size for mobile */
+    padding-left: 0;
+    /* Remove left padding */
   }
 
-  /* Show the search input when the button is clicked */
-  .search-input:focus {
-    display: block;
-    width: 100%;
-    /* Input takes full width */
-    padding: 12px;
-    /* Add padding to the search input */
-    margin-top: 10px;
+  button {
+    padding: 10px 15px;
+    /* Adjust button padding */
+    font-size: 14px;
+    /* Reduce font size */
+    margin: 10px 0;
+    /* Adjust margin */
   }
+}
 
-  .search-container {
-    width: 100%;
-    /* Make search bar container full width */
-  }
+.navbar {
+  flex-direction: column;
+  /* Stack the navbar links vertically */
+  align-items: center;
+  /* Center align items on mobile */
+  padding: 20px;
+  /* Adjust padding for mobile */
+}
 
-  .container {
-    padding: 2px 8px;
-    /* Adjust padding for small screens */
-  }
+.navbar a {
+  font-size: 16px;
+  /* Adjust font size on mobile */
+  padding: 12px 20px;
+  /* Add more padding for easier tapping */
+  text-align: left;
+  /* Align links to the left */
+  width: 100%;
+  /* Make links take full width on mobile */
+  box-sizing: border-box;
+  /* Prevent overflow */
+}
+
+.navbar a:hover {
+  background-color: rgba(96, 174, 121, 0.802);
+  color: black;
+}
+
+.footer {
+  position: relative;
+  /* Change fixed to relative on small screens */
+  padding: 10px;
+}
+
+.center {
+  padding: 50px 10px;
+  /* Adjust padding for smaller screens */
+}
+
+.card {
+  width: 100%;
+  /* Make cards take full width on small screens */
+  margin-bottom: 15px;
+}
+
+.search-button {
+  width: 100%;
+  /* Make the search button take full width on mobile */
+  padding: 12px;
+  /* Add extra padding to make the button easier to tap */
+  margin-top: 10px;
+}
+
+/* Show the search input when the button is clicked */
+.search-input:focus {
+  display: block;
+  width: 100%;
+  /* Input takes full width */
+  padding: 12px;
+  /* Add padding to the search input */
+  margin-top: 10px;
+}
+
+.search-container {
+  width: 100%;
+  /* Make search bar container full width */
+}
+
+.container {
+  padding: 2px 8px;
+  /* Adjust padding for small screens */
 }
 
 /* Extra small screens (portrait phones) */
 @media screen and (max-width: 480px) {
-  .navbar a {
+  .logo {
+    font-size: 24px;
+    /* Further reduce logo font size */
+  }
+
+  nav>ul>li>a {
     font-size: 16px;
-    /* Reduce font size further */
-    padding: 8px 16px;
-    /* Adjust padding */
+    /* Reduce font size further for small phones */
   }
 
-  .search-input {
-    display: block;
-    width: 200px;
-  }
-
-  .search-button {
-    display: none;
-    /* Hide the search button on desktop */
-  }
-
-  .footer p {
+  button {
+    padding: 8px 12px;
+    /* Make the button more compact */
     font-size: 12px;
-    /* Adjust footer text size */
+    /* Further reduce font size */
   }
+}
+
+.navbar a {
+  font-size: 16px;
+  /* Reduce font size further */
+  padding: 8px 16px;
+  /* Adjust padding */
+}
+
+.search-input {
+  display: block;
+  width: 200px;
+}
+
+.search-button {
+  display: none;
+  /* Hide the search button on desktop */
+}
+
+.footer p {
+  font-size: 12px;
+  /* Adjust footer text size */
 }

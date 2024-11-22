@@ -6,6 +6,10 @@ body {
   background-color: #F5F5DC;
 }
 
+.arabic {
+  font-family: 'Reem Kufi';
+}
+
 .home {
   display: flex;
   justify-content: space-between;
@@ -21,9 +25,10 @@ body {
   cursor: pointer;
 }
 
-.active{
+.active {
   color: #053B50;
 }
+
 nav ul {
   display: flex;
   justify-content: center;
@@ -75,9 +80,10 @@ a:hover {
   color: #053B50;
 }
 
-.logo a{
+.logo a {
   color: #053B50;
 }
+
 h1 {
   color: #222831;
 }
@@ -155,6 +161,54 @@ p {
 .container {
   padding: 2px 16px;
 }
+
+.containerp {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+
+.leftp,
+.rightp {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.centerp {
+  text-align: center;
+  padding: 200px;
+}
+.rightp .centerp{
+  background-color: #053B50;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+.rightp .centerp:hover{
+  background-color: #222831;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  max-width: 400px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.contact-details {
+  margin-top: 20px;
+  text-align: left;
+}
+
 
 /* Search Input */
 .search-input {

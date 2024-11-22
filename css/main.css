@@ -198,18 +198,24 @@ form {
 }
 
 input,
-textarea {
+textarea  form  {
   width: 100%;
   padding: 10px;
   border: 1px solid #ccc;
-  border-radius: 5px;
 }
 .contact-details {
   margin-top: 20px;
   text-align: left;
 }
 
+img{
+  height: 500px;
+  width: 65%;
+}
 
+ul ::marker{
+color: transparent;
+}
 /* Search Input */
 .search-input {
   font-family: Changa;

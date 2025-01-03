@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>المكتبة السلفية</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Amiri&display=swap" rel="stylesheet">
+    <style>
+        #text {
+            padding: 100px;
+        }
+    </style>
+    <style>
+        .invalid {
+            color: red;
+            font-weight: bold;
+        }
+    </style>
+    
+</head>
+
+<body>
+    <section class="home">
+        <h2 class="logo"><a href="index.html">المكتبة السلفية</a></h2>
+        <nav>
+            <ul>
+                <li> <a class="active" href="index.html">الرئيسية</a></li>
+                <li> <a href="success.html">قصص نجاح </a></li>
+                <li> <a href="contactus.html">اتصل بنا</a></li>
+                <li> <a href="aboutus.html"> من نَحنُ</a></li>
+            </ul>
+
+        </nav>
+        <div class="search-container">
+            <input type="text" class="search-input" placeholder="بحث...">
+            <button class="search-button">
+                <i class="fa fa-search"></i>
+            </button>
+        </div>
+
+    </section>
+    <form onsubmit=" return select();">
+        <label for="email">البريد الإلكتروني:</label>
+        <input type="email" id="email" name="email" required>
+        <label for="password">: كلمة السر </label>
+        <input type="password" id="pas" name="password" required>
+        <p id="mas"></p>
+        <button type="submit">Log in</button>
+    </form>
+    <script>
+        function select() {
+            var pas = document.getElementById('pas').value;
+            var c = /[A-Z]/.test(pas);
+            var s = /[a-z]/.test(pas);
+            var n = /[0-9]/.test(pas);
+            var ln = pas.length > 8;
+            if (c && s && ln && n) {
+                mas.innerHTML = "كلمة السر صالحة";
+                mas.className = "valid";
+                return true;
+            } else {
+                mas.innerHTML = "كلمة السر غير صالحة. يجب أن تحتوي على حرف كبير، حرف صغير، رقم، وطولها أكثر من 8 أحرف.";
+                mas.className = "invalid";
+                return false;
+            }
+        }
+    </script>
+</body>

@@ -11,24 +11,34 @@
         #text {
             padding: 100px;
         }
-    </style>
-    <style>
         .invalid {
             color: red;
             font-weight: bold;
         }
+        .form-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
     </style>
 </head>
 
-<body>
+<body dir="rtl">
     <section class="home">
         <h2 class="logo"><a href="index.html">المكتبة السلفية</a></h2>
         <nav>
             <ul>
-                <li> <a class="active" href="index.html">الرئيسية</a></li>
+                <li> <a  href="index.html">الرئيسية</a></li>
                 <li> <a href="success.html">قصص نجاح </a></li>
                 <li> <a href="contactus.html">اتصل بنا</a></li>
                 <li> <a href="aboutus.html"> من نَحنُ</a></li>
+                <li> <a class="active" href="log.html"> الحساب الشخصي</a></li>
             </ul>
 
         </nav>
@@ -40,16 +50,23 @@
         </div>
 
     </section>
-    <form onsubmit=" return select();">
-        <label for="email">البريد الإلكتروني:</label>
-        <input type="email" id="email" name="email" required>
-        <label for="password">: كلمة السر </label>
-        <input type="password" id="pas" name="password" required>
-        <label for="password">تحقق من كلمة السر: </label>
-        <input type="password" id="pas1" name="password" required>
-        <p id="mas"></p>
-        <button type="submit">Log in</button>
-    </form>
+    <div class="form-container">
+        <form onsubmit=" return select();">
+            <label for="email">البريد الإلكتروني:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="password">: كلمة السر </label>
+            <input type="password" id="pas" name="password" required>
+            <label for="password">تحقق من كلمة السر: </label>
+            <input type="password" id="pas1" name="password" required>
+            <p id="mas"></p>
+            <button type="button" onclick="window.location.href='log.html'">تسجيل الدخول</button>
+        </form>
+    </div>
+    <div class="footer">
+        <p>Explore. Learn. Grow.
+            May Allah guide us all to the straight path.</p>
+        <p> Copyright © 2025 Salafi Library. All Rights Reserved.</p>
+    </div>
     <script>
         function select() {
             var pas = document.getElementById('pas').value;
@@ -75,3 +92,4 @@
         }
     </script>
 </body>
+</html>
